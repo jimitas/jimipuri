@@ -27,7 +27,7 @@ export function step28() {
   // 問題１…次の分数を真分数と仮分数に分ける
   function mondai_1_create() {
     const textContainer_1 = document.createElement("div");
-    textContainer_1.innerHTML = `<h3>☆次の分数を真分数と仮分数に分けましょう。</h3>`;
+    textContainer_1.innerHTML = `<h4>☆次の分数を真分数と仮分数に分けましょう。</h4>`;
 
     const shinbunsu = [];
     const kabunsu = [];
@@ -75,7 +75,7 @@ export function step28() {
   // 問題２…次の帯分数を仮分数になおす。
   function mondai_2_create() {
     const textContainer_3 = document.createElement("div");
-    textContainer_3.innerHTML = `<h3>☆次の帯分数を仮分数になおしましょう。</h3>`;
+    textContainer_3.innerHTML = `<h4>☆次の帯分数を仮分数になおしましょう。</h4>`;
 
     const fractionContainer = document.createElement("div");
     fractionContainer.classList.add("fraction-container");
@@ -111,7 +111,7 @@ export function step28() {
 
       // 問題を区切るための要素を生成
       const equal = document.createElement("div");
-      equal.classList.add("improper_fraction");
+      equal.classList.add("fraction-equal");
       equal.textContent = "＝　　";
       fraction.appendChild(equal);
 
@@ -126,7 +126,7 @@ export function step28() {
   // 問題３…次の数の大きさをくらべ、等号や不等号を使って式に表す。
   function mondai_3_create() {
     const textContainer_4 = document.createElement("div");
-    textContainer_4.innerHTML = `<br/><h3>☆次の数の大きさをくらべ、等号や不等号を使って<br/>　式に表しましょう。</h3>`;
+    textContainer_4.innerHTML = `<br/><h4>☆次の数の大きさをくらべ、等号や不等号を使って<br/>　式に表しましょう。</h4>`;
     TBL.appendChild(textContainer_4);
 
     const fractionContainer = document.createElement("div");
@@ -198,7 +198,7 @@ export function step28() {
   // 問題４…次の計算をする。
   function mondai_4_create() {
     const textContainer_8 = document.createElement("div");
-    textContainer_8.innerHTML = `<br/><h3>☆次の計算をしましょう。</h3>`;
+    textContainer_8.innerHTML = `<br/><h4>☆次の計算をしましょう。</h4>`;
     TBL.appendChild(textContainer_8);
 
     const fractionContainer = document.createElement("div");
@@ -278,7 +278,7 @@ export function step28() {
 
       // 問題を区切るための要素を生成
       const equal = document.createElement("div");
-      equal.classList.add("improper_fraction");
+      equal.classList.add("fraction-equal");
       if (i < 17) {
         equal.textContent = "＝　　　";
       } else {

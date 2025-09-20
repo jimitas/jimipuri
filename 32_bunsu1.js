@@ -72,7 +72,7 @@ export function step32() {
 
       // 問題を区切るための要素を生成
       const equal = document.createElement("div");
-      equal.classList.add("improper_fraction");
+      equal.classList.add("fraction-equal");
       equal.textContent = "＝　　　";
       fraction.appendChild(equal);
 
@@ -242,7 +242,7 @@ export function step32() {
 
       // 問題を区切るための要素を生成
       const equal = document.createElement("div");
-      equal.classList.add("improper_fraction");
+      equal.classList.add("fraction-equal");
       equal.textContent = "＝　　　　　　　";
       fraction.appendChild(equal);
 

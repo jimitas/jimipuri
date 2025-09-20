@@ -24,7 +24,7 @@ export function columnCalcCreate2Digit(left_array, kigo, right_array, row_length
         TBL.rows[row * 4 + 3].cells[col * 4 + 3].style.height = "20mm";
       }
       if (row_length === 3) {
-        TBL.rows[row * 3 + 3].cells[col * 3 + 3].style.height = "38mm";
+        TBL.rows[row * 4 + 3].cells[col * 4 + 3].style.height = "38mm";
       }
 
       const a = left_array[row * 3 + col];

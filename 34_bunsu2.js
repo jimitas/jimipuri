@@ -56,7 +56,7 @@ export function step34() {
       fraction.appendChild(divFormulas);
       // イコールの作成
       const equal = document.createElement("div");
-      equal.classList.add("improper_fraction");
+      equal.classList.add("fraction-equal");
       equal.textContent = "＝　　　";
       fraction.appendChild(equal);
 
@@ -113,7 +113,7 @@ export function step34() {
       fraction.appendChild(fractionWrapper);
       // イコールの作成
       const equal = document.createElement("div");
-      equal.classList.add("improper_fraction");
+      equal.classList.add("fraction-equal");
       equal.textContent = "＝　　　　　　　　　";
       fraction.appendChild(equal);
 
@@ -162,7 +162,7 @@ export function step34() {
       fraction.appendChild(divFormulas);
       // イコールの作成
       const equal = document.createElement("div");
-      equal.classList.add("improper_fraction");
+      equal.classList.add("fraction-equal");
       equal.textContent = "＝　　　";
       fraction.appendChild(equal);
 

@@ -160,7 +160,7 @@ export function createFractionFormula(
   }
   // イコールの作成
   const equal = document.createElement("div");
-  equal.classList.add("improper_fraction");
+  equal.classList.add("fraction-equal");
   equal.textContent = "＝　　　";
   fraction.appendChild(equal);
 

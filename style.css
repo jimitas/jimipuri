@@ -142,7 +142,7 @@ header {
 #TBL tr .td_2column {
   width: 18mm;
   height: 10mm;
-  line-height: 11mm;
+  line-height: 10mm;
   font-size: 11mm;
   text-align: center;
 }
@@ -228,6 +228,14 @@ header {
 .fraction-container {
   display: flex;
   flex-wrap: wrap;
+}
+
+/* 分数の＝記号の位置調整（左寄せ） */
+.fraction-equal {
+  margin: 1em 0.2em;
+  text-align: left;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 #TBL .fraction,
