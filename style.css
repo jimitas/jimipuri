@@ -1,0 +1,315 @@
+@charset "UTF-8";
+@page {
+  size: A4 portrait;
+  margin: 0mm;
+}
+@media print {
+  .no-print {
+    display: none;
+  }
+  .page {
+    zoom: 1.25;
+    background-color: white;
+  }
+}
+/* UD デジタル 教科書体 N-R フォントを指定 */
+body {
+  font-family: "UD Digi Kyokasho N-R";
+}
+
+h1 {
+  font-family: "UD Digi Kyokasho N-B";
+}
+
+header {
+  width: auto;
+  position: fixed;
+  height: 60px;
+  border-bottom: dashed 1px blue;
+  background-color: white;
+  z-index: 100;
+}
+
+#footer-area {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 210mm;
+  height: 30mm;
+  padding: 2mm 2mm 2mm 5mm;
+  border-top: dashed 1px black;
+  z-index: 100;
+}
+#footer-area #copy_right {
+  position: absolute;
+  height: 5mm;
+  bottom: 7mm;
+  right: 5mm;
+}
+
+.page {
+  width: 210mm;
+  height: 297mm;
+  box-sizing: border-box;
+  padding: 20mm 10mm 20mm 20mm;
+  position: fixed;
+  z-index: 10;
+}
+
+.select {
+  width: 300px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.animal {
+  width: 50px;
+  height: 50px;
+  margin: 2px;
+}
+
+.input-box {
+  width: 15mm;
+  height: 15mm;
+  border: 1px solid black;
+}
+
+#zoom {
+  width: 65px;
+  height: 40px;
+  text-align: right;
+  padding-right: 5px;
+}
+
+#title-header {
+  width: 100%;
+}
+#title-header td {
+  border: solid 1px black;
+  font-size: 6mm;
+  height: 15mm;
+}
+#title-header #title {
+  font-size: 20px;
+  padding-left: 2mm;
+}
+#title-header #grade {
+  padding-left: 2mm;
+  padding-top: 15px;
+  width: 50%;
+}
+
+#contents-menu {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+#contents-menu button {
+  margin: 2px;
+  width: 300px;
+}
+
+/* 1列目のスタイル */
+#TBL tr .td_oneLine {
+  height: 20mm;
+  font-size: 10mm;
+}
+#TBL tr .td_oneLine:nth-of-type(5n + 1) {
+  width: 10mm;
+  text-align: center;
+}
+#TBL tr .td_oneLine:nth-of-type(5n + 2),
+#TBL tr .td_oneLine:nth-of-type(5n + 3),
+#TBL tr .td_oneLine:nth-of-type(5n + 4) {
+  width: 15mm;
+  text-align: center;
+}
+#TBL tr .td_oneLine:nth-of-type(5n) {
+  width: 40mm;
+  text-align: left;
+}
+#TBL tr .td_oneLine_3formura {
+  width: 12mm;
+  height: 22mm;
+  font-size: 10mm;
+  text-align: center;
+}
+#TBL tr .td_oneLine_3formura:nth-of-type(1) {
+  width: 20mm;
+  text-align: center;
+}
+#TBL tr .td_2column {
+  width: 18mm;
+  height: 10mm;
+  line-height: 11mm;
+  font-size: 11mm;
+  text-align: center;
+}
+#TBL tr .td_2column:nth-of-type(4n) {
+  width: 40mm;
+}
+#TBL tr .td_3column {
+  width: 16mm;
+  height: 10mm;
+  line-height: 11mm;
+  font-size: 11mm;
+  text-align: center;
+}
+#TBL tr .td_3column:nth-of-type(5n) {
+  width: 40mm;
+}
+#TBL tr .td_Decimals,
+#TBL tr .td_Decimals2 {
+  width: 16mm;
+  height: 10mm;
+  line-height: 11mm;
+  font-size: 11mm;
+  text-align: center;
+}
+#TBL tr .td_Decimals:nth-of-type(5n + 2) {
+  text-align: right;
+}
+#TBL tr .td_Decimals:nth-of-type(5n + 3) {
+  width: 0px;
+  padding: 0;
+  text-align: center;
+}
+#TBL tr .td_Decimals:nth-of-type(5n + 4) {
+  text-align: left;
+}
+#TBL tr .td_Decimals2:nth-of-type(7n + 2) {
+  text-align: right;
+}
+#TBL tr .td_Decimals2:nth-of-type(7n + 3),
+#TBL tr .td_Decimals2:nth-of-type(7n + 5) {
+  width: 0px;
+  padding: 0;
+  font-size: 8mm;
+  text-align: center;
+}
+#TBL tr .td_Decimals2:nth-of-type(7n + 6) {
+  text-align: left;
+}
+#TBL tr .td_Decimals2:nth-of-type(7n) {
+  width: 40mm;
+}
+#TBL tr .td_division {
+  width: 10mm;
+  height: 10mm;
+  line-height: 11mm;
+  font-size: 10mm;
+  text-align: center;
+}
+
+.clock_answer_text {
+  height: 50px;
+  margin-top: -20px;
+  font-size: 8mm;
+  text-align: right;
+  border: solid 1px black;
+}
+
+.animal_td {
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  text-align: center;
+  border: solid 1px black;
+}
+
+#comment {
+  position: absolute;
+  left: 5mm;
+  bottom: 30mm;
+}
+
+/* 分数をスタイリングするCSSの例 */
+.fraction-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#TBL .fraction,
+.kigo {
+  font-size: 6mm;
+  display: inline-block;
+  vertical-align: middle;
+}
+#TBL .fraction .improper_fraction,
+#TBL .fraction .kigo,
+.kigo .improper_fraction,
+.kigo .kigo {
+  margin: 1em 0.2em;
+  text-align: center;
+}
+#TBL .fraction .numerator,
+#TBL .fraction .denominator,
+.kigo .numerator,
+.kigo .denominator {
+  width: 1.3em;
+  display: block;
+  text-align: center;
+}
+#TBL .fraction .denominator,
+.kigo .denominator {
+  margin: 0.2em 0;
+}
+#TBL .fraction .numerator,
+.kigo .numerator {
+  border-bottom: 1px solid black;
+  margin: 0.2em 0;
+}
+
+.square {
+  width: 40px;
+  height: 40px;
+  margin: 15px;
+  border: 1px solid black;
+}
+
+.fraction,
+.kigo {
+  font-size: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.fraction .improper_fraction,
+.fraction .kigo,
+.kigo .improper_fraction,
+.kigo .kigo {
+  margin: 1em 0.2em;
+  text-align: center;
+}
+.fraction .numerator,
+.fraction .denominator,
+.kigo .numerator,
+.kigo .denominator {
+  display: block;
+  text-align: center;
+}
+.fraction .denominator,
+.kigo .denominator {
+  margin: 0.2em 0;
+}
+.fraction .numerator,
+.kigo .numerator {
+  border-bottom: 1px solid black;
+  margin: 0.2em 0;
+}
+
+.grid-container {
+  display: grid;
+  border: 1px solid black;
+}
+
+.grid-item {
+  border: 1px solid lightgray;
+}
+
+.graphTd {
+  width: 80px;
+  border: solid 1px black;
+  text-align: center;
+  font-size: 20px;
+}/*# sourceMappingURL=style.css.map */
